@@ -15,9 +15,10 @@ public class InsertionSort implements Sorter {
     @Override
     public <T> void sort(T[] array, Comparator<T> comparator) {
         T key;
+        int j;
         for(int i = 1; i < array.length; i++){
            key = array[i];
-           int j = i-1;
+           j = i-1;
            // best case 'comparator.compare(array[j], key) > 0' is always false
            while (j >= 0 && comparator.compare(array[j], key) > 0){ // Shift elements greater than the key to the right
                array[j+1] = array[j];// Move elements one position right
