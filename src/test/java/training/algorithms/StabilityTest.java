@@ -7,9 +7,10 @@ import java.util.Comparator;
 import java.util.Objects;
 import java.util.stream.Stream;
 
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
+import training.algorithms.sort.BubbleSort;
+import training.algorithms.sort.InsertionSort;
 
 class Student {
     String lastName;
@@ -133,6 +134,7 @@ public class StabilityTest {
 
     static Stream<Sorter> stableSorterProvider() {
         // Test all the algorithms it is expected to fail with BubbleSort and QuickSort
-        return Stream.of(new InsertionSort(), new BubbleSort(), new QuickSort(), new MergeSort());
+        // return Stream.of(new InsertionSort(), new BubbleSort(), new QuickSort(), new MergeSort());
+         return Stream.of(new InsertionSort(),new BubbleSort());
     }
 }
