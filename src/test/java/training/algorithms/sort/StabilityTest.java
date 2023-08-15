@@ -133,6 +133,6 @@ public class StabilityTest {
 
     static Stream<Sorter> stableSorterProvider() {
         // Test all the algorithms it is expected to fail with BubbleSort and QuickSort
-         return Stream.of(new InsertionSort(),new BubbleSort(), new MergeSort());
+         return Stream.of(new InsertionSort(),new BubbleSort(), new MergeSort(), new QuickSort());
     }
 }

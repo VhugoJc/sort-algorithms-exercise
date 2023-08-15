@@ -94,6 +94,6 @@ public class SortingTest {
 
     static Stream<Sorter> sorterProvider() {
 //        return Stream.of(new InsertionSort(), new BubbleSort(), new MergeSort(), new QuickSort());
-        return Stream.of(new InsertionSort(),new BubbleSort(), new MergeSort());
+        return Stream.of(new InsertionSort(),new BubbleSort(), new MergeSort(), new QuickSort());
     }
 }
