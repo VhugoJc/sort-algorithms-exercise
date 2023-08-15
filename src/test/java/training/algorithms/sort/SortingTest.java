@@ -1,4 +1,4 @@
-package training.algorithms;
+package training.algorithms.sort;
 
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -7,8 +7,10 @@ import java.util.stream.Stream;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
+import training.algorithms.Sorter;
 import training.algorithms.sort.BubbleSort;
 import training.algorithms.sort.InsertionSort;
+import training.algorithms.sort.MergeSort;
 
 public class SortingTest {
 
@@ -92,6 +94,6 @@ public class SortingTest {
 
     static Stream<Sorter> sorterProvider() {
 //        return Stream.of(new InsertionSort(), new BubbleSort(), new MergeSort(), new QuickSort());
-        return Stream.of(new InsertionSort(),new BubbleSort());
+        return Stream.of(new InsertionSort(),new BubbleSort(), new MergeSort());
     }
 }
